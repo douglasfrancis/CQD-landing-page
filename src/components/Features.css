@@ -1,0 +1,33 @@
+section{
+    margin: 0;
+    display: flex;
+}
+
+.coloured-section{
+    height: 80vh;
+    width: 40vw;
+    background-color: #dfefed;
+}
+
+.desc-section{
+    width: 60vw;
+    height: 80vh;
+    background-color: #fff;
+    object-fit: contain;
+    object-position: center;
+
+}
+
+#desktop-img{
+    width: 70vw;
+    margin: 0 auto
+}
+
+
+#features{
+    text-align: center;
+}
+
+#lights-img{
+    height: 80vh;
+}
