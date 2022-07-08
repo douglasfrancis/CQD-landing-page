@@ -27,7 +27,7 @@ export default function Navbar() {
             <Link 
               variant="button"
               color="#fff"             
-               href="/"
+               href="/pricing"
               sx={{ my: 1, mx: 1.5 }}
             >
               Pricing
@@ -35,15 +35,17 @@ export default function Navbar() {
             <Link
               variant="button"
               color="#fff"
-                href="/"
+                href="/support"
               sx={{ my: 1, mx: 1.5 }}
             >
               Support
             </Link>
           </nav>
-          <Button href="#" variant="outlined" sx={{ my: 1, mx: 1.5, color: '#fff', borderColor: '#fff' }}>
-            Free Trial
-          </Button>
+          <Link href="/support">
+            <Button  variant="outlined" sx={{ my: 1, mx: 1.5, color: '#fff', borderColor: '#fff' }}>
+              Book Demo
+            </Button>
+          </Link>
         </Toolbar>
       </AppBar>
   )

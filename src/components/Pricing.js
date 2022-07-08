@@ -9,46 +9,34 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import StarIcon from '@mui/icons-material/StarBorder';
 import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
 import GlobalStyles from '@mui/material/GlobalStyles';
 import Container from '@mui/material/Container';
 import Navbar from './Navbar';
+import Footer from './Footer';
+import Link from '@mui/material/Link';
 
-function Copyright(props) {
-  return (
-    <Typography variant="body2" color="text.secondary" align="center" {...props}>
-      {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Frantech Web Solutions Ltd
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
 
 const tiers = [
   {
-    title: 'Free Trial',
-    price: '0',
+    title: 'Basic',
+    price: '80',
     description: [
       'Free for 3 months',
       'All standard features',
       
       'Email support',
     ],
-    buttonText: 'Sign up for free',
+    buttonText: 'Sign up',
     buttonVariant: 'outlined',
   },
   {
     title: 'Standard',
-    subheader: 'Most popular',
+    subheader: 'Coming Soon',
     price: '149',
     description: [
         'Free Manager Training',
       'eMar',
       'Automatic Mileage Tracking',
-      'Priority email support',
     ],
     buttonText: 'Get started',
     buttonVariant: 'contained',
@@ -67,30 +55,7 @@ const tiers = [
   },
 ];
 
-const footers = [
-  {
-    title: 'Company',
-    description: ['Team', 'History', 'Contact us', 'Locations'],
-  },
-  {
-    title: 'Features',
-    description: [
-      'Cool stuff',
-      'Random feature',
-      'Team feature',
-      'Developer stuff',
-      'Another one',
-    ],
-  },
-  {
-    title: 'Resources',
-    description: ['Resource', 'Resource name', 'Another resource', 'Final resource'],
-  },
-  {
-    title: 'Legal',
-    description: ['Privacy policy', 'Terms of use'],
-  },
-];
+
 
 function PricingContent() {
   return (
@@ -99,10 +64,10 @@ function PricingContent() {
       <CssBaseline />
       <Navbar/>
       {/* Hero unit */}
-      <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 8, pb: 6 }}>
+      <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 8, p: 4 }}>
         <Typography
           component="h1"
-          variant="h2"
+          variant="h3"
           align="center"
           color="text.primary"
           gutterBottom
@@ -114,23 +79,21 @@ function PricingContent() {
         </Typography>
       </Container>
       {/* End hero unit */}
-      <Container maxWidth="md" component="main">
-        <Grid container spacing={5} alignItems="flex-end">
-          {tiers.map((tier) => (
-            // Enterprise card is full width at sm breakpoint
+      <Container maxWidth="md" component="main" >
+        <Grid container spacing={5} sx={{justifyContent:'center'}}>
+          
+           
             <Grid
               item
-              key={tier.title}
+              
               xs={12}
-              sm={tier.title === 'Enterprise' ? 12 : 6}
+              sm={12}
               md={4}
             >
               <Card>
                 <CardHeader
-                  title={tier.title}
-                  subheader={tier.subheader}
+                  title={"Core Package"}
                   titleTypographyProps={{ align: 'center' }}
-                  action={tier.title === 'Pro' ? <StarIcon /> : null}
                   subheaderTypographyProps={{
                     align: 'center',
                   }}
@@ -151,65 +114,111 @@ function PricingContent() {
                           from 
                       </Typography>
                     <Typography component="h2" variant="h3" color="text.primary">
-                      £{tier.price}
+                      £80
                     </Typography>
                     <Typography variant="h6" color="text.secondary">
                       /mo
                     </Typography>
                   </Box >
                   <ul>
-                    {tier.description.map((line) => (
+                    
+                      
+                      <Link href='/'>
+                        <Typography
+                          component="li"
+                          variant="subtitle1"
+                          align="center"
+                          sx={{color:'#288'}}
+                        >
+                        All standard features
+                        </Typography>
+                      </Link>
+                 
+                  </ul>
+                </CardContent>
+                <CardActions sx={{backgroundColor: '#dfefed'}}>
+                  <Link href="/support" sx={{textDecoration: 'none', margin: '0 auto'}}>
+                    <Button  variant="outlined" sx={{borderColor: '#32948c', color: '#32948c' }}>
+                      Book Demo
+                    </Button>
+                  </Link>
+                  
+                </CardActions>
+              </Card>
+            </Grid>
+            
+            <Grid
+              item
+              
+              xs={12}
+              sm={12}
+              md={12}
+            >
+              <Card>
+                <CardHeader
+                  title={"Add-ons"}
+                  titleTypographyProps={{ align: 'center' }}
+                  subheader={'Coming Soon'}
+
+                  subheaderTypographyProps={{
+                    align: 'center',
+                  }}
+                  sx={{
+                    backgroundColor:'#32948c', color: '#fff'
+                  }}
+                />
+                <CardContent sx={{backgroundColor: '#dfefed'}}>
+                  <Box
+                    sx={{
+                      display: 'flex',
+                      justifyContent: 'center',
+                      alignItems: 'baseline',
+                      mb: 2,
+                    }}
+                  >
+                      <Typography>
+                          from 
+                      </Typography>
+                    <Typography component="h2" variant="h3" color="text.primary">
+                      £5
+                    </Typography>
+                    <Typography variant="h6" color="text.secondary">
+                      /add-on
+                    </Typography>
+                  </Box >
+                  <ul>
+                    
                       <Typography
                         component="li"
                         variant="subtitle1"
                         align="center"
-                        key={line}
+                        
                       >
-                        {line}
+                       eMar
                       </Typography>
-                    ))}
+                      <Typography
+                        component="li"
+                        variant="subtitle1"
+                        align="center"
+                        
+                      >
+                       Mileage tracker
+                      </Typography>
+                 
                   </ul>
                 </CardContent>
                 <CardActions sx={{backgroundColor: '#dfefed'}}>
-                  <Button fullWidth variant={tier.buttonVariant} sx={{borderColor: '#32948c'}}>
-                    {tier.buttonText}
+                  <Button  variant="outlined" sx={{borderColor: '#32948c', margin: '0 auto',  color: '#32948c'}}>
+                    Find Out More
                   </Button>
                 </CardActions>
               </Card>
             </Grid>
-          ))}
+         
         </Grid>
       </Container>
       {/* Footer */}
-      <Container
-        maxWidth="md"
-        component="footer"
-        sx={{
-          borderTop: (theme) => `1px solid ${theme.palette.divider}`,
-          mt: 8,
-          py: [3, 6],
-        }}
-      >
-        <Grid container spacing={4} justifyContent="space-evenly">
-          {footers.map((footer) => (
-            <Grid item xs={6} sm={3} key={footer.title}>
-              <Typography variant="h6" color="text.primary" gutterBottom>
-                {footer.title}
-              </Typography>
-              <ul>
-                {footer.description.map((item) => (
-                  <li key={item}>
-                    <Link href="#" variant="subtitle1" color="text.secondary">
-                      {item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </Grid>
-          ))}
-        </Grid>
-        <Copyright sx={{ mt: 5 }} />
-      </Container>
+      <Footer />
       {/* End footer */}
     </React.Fragment>
   );
