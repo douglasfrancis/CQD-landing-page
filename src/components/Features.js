@@ -63,7 +63,7 @@ export default function Features() {
           <Typography
             variant="h5" align="center" color="text.secondary" component="p"
           >
-            Our standard features are great for small or start up care comapnies looking to improve the way they work
+            Our standard features are great for small or start up care companies looking to improve the way they work
           </Typography>
           </Container>
           <div id="features">

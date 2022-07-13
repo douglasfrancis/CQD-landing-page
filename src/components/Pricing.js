@@ -75,7 +75,7 @@ function PricingContent() {
           Pricing
         </Typography>
         <Typography variant="h5" align="center" color="text.secondary" component="p">
-          Choose the best package to suit your business no matter how big or small. With a huge number of features as standard we're confident running your care business will never be easier!
+          Choose the best package to suit your business, no matter how big or small. With a huge number of features as standard we're confident running your care business will never be easier!
         </Typography>
       </Container>
       {/* End hero unit */}
