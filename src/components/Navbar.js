@@ -41,11 +41,19 @@ export default function Navbar() {
               Support
             </Link>
           </nav>
-          <Link href="/support">
-            <Button  variant="outlined" sx={{ my: 1, mx: 1.5, color: '#fff', borderColor: '#fff' }}>
-              Book Demo
-            </Button>
-          </Link>
+          <div>
+            <Link href="https://app.cqd.org.uk">
+              <Button  variant="outlined" sx={{ my: 1, mx: 1.5, color: '#fff', borderColor: '#fff' }}>
+                Log In
+              </Button>
+            </Link>
+            <Link href="/support">
+              <Button  variant="outlined" sx={{ my: 1, mx: 1.5, color: '#fff', borderColor: '#fff' }}>
+                Book Demo
+              </Button>
+            </Link>
+          </div>
+          
         </Toolbar>
       </AppBar>
   )
