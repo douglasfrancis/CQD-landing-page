@@ -5,12 +5,9 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardHeader from '@mui/material/CardHeader';
-import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-import GlobalStyles from '@mui/material/GlobalStyles';
 import Container from '@mui/material/Container';
-import Navbar from './Navbar';
 import Footer from './Footer';
 import Link from '@mui/material/Link';
 import TextField from '@mui/material/TextField'
@@ -28,15 +25,14 @@ function PricingContent() {
   },[number])
 
   const calculatePrice = () =>{
-    setPrice((number * 8) + 80)
+    setPrice((number * 7) + 80)
 
   }
 
 
   return (
     <React.Fragment>
-      <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
-      <CssBaseline />
+     
       <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 8, p: 4 }}>
         <Typography
           component="h1"
@@ -74,7 +70,7 @@ function PricingContent() {
                     backgroundColor:'#32948c', color: '#fff'
                   }}
                 />
-                <CardContent sx={{backgroundColor: '#dfefed'}}>
+                <CardContent sx={{backgroundColor: '#f2f9f8'}}>
                   <Box
                     sx={{
                       display: 'flex',
@@ -111,9 +107,9 @@ function PricingContent() {
                  
                   </ul>
                 </CardContent>
-                <CardActions sx={{backgroundColor: '#dfefed'}}>
+                <CardActions sx={{backgroundColor: '#f2f9f8'}}>
                   <Link href="/support" sx={{textDecoration: 'none', margin: '0 auto'}}>
-                    <Button  variant="outlined" sx={{borderColor: '#32948c', color: '#32948c' }}>
+                    <Button  variant="contained" sx={{backgroundColor: '#266867', color: '#fff' }}>
                       Book Demo
                     </Button>
                   </Link>

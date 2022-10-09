@@ -13,7 +13,7 @@ export default function Features() {
 
   return (
     <div >
-        <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 8, p: 4, pb: 0 }}>
+        <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 8, p: 4, pb: 4 }}>
           <Typography
             component="h1"
             variant="h4"
@@ -27,14 +27,14 @@ export default function Features() {
           <Typography
             variant="h5" align="center" color="text.secondary" component="p"
           >
-            Our standard features are great for small or start up care companies looking to improve the way they work
+            At Care Quality Digital, we believe that all features should come as standard to ensure even the smallest companies have the tools to support their compliance with CQC
           </Typography>
           </Container>
 
           <section id='staff-container'>
            
             <div className='width-40' >
-              <Carousel autoPlay={false} showArrows={true} showStatus={false} infiniteLoop={true}>
+              <Carousel autoPlay={true} showArrows={true} showStatus={false} infiniteLoop={true} >
                 <FeatureContainer title='Staff Rota' icon='event_available_icon'/>
                 <FeatureContainer title='Staff Mobile App' icon='phone_iphone_icon'/>
                 <FeatureContainer title='Geographical Locator' icon='location_on_icon'/>
@@ -56,7 +56,7 @@ export default function Features() {
             </div>
             
             <div className='width-40'>
-              <Carousel autoPlay={false} showArrows={true} showStatus={false} infiniteLoop={true}>
+              <Carousel autoPlay={true} showArrows={true} showStatus={false} infiniteLoop={true}>
                 <FeatureContainer title='Client Medication List - eMar included as standard' icon='medication_icon'/>
                 <FeatureContainer title='Client Specific Tasks' icon='task_alt_icon'/>
                 <FeatureContainer title='Client Care Plans' icon='library_books_icon'/>

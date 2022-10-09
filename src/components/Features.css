@@ -6,7 +6,7 @@
   align-items: center;
   flex-direction: column;
   transition: all ease 0.2s;
-
+  background-color: #f2f9f8;
 }
 
 
@@ -22,9 +22,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+  position: relative;
+
 }
 .width-60{
   width: 60vw;
+  box-sizing: border-box;
+  position: relative;
 
 }
 
@@ -36,6 +41,8 @@
 
 }
 
-.carousel .control-next.control-arrow:before, .carousel.carousel-slider .control-arrow{
-  color: black !important;
+.carousel{
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
 }
