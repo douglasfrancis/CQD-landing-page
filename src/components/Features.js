@@ -33,8 +33,8 @@ export default function Features() {
 
           <section id='staff-container'>
            
-            <div className='width-40' >
-              <Carousel autoPlay={true} showArrows={true} showStatus={false} infiniteLoop={true} >
+            <div className='width-40' id='first-carousel'>
+              <Carousel autoPlay={true} showArrows={true} showStatus={false} infiniteLoop={true}  >
                 <FeatureContainer title='Staff Rota' icon='event_available_icon'/>
                 <FeatureContainer title='Staff Mobile App' icon='phone_iphone_icon'/>
                 <FeatureContainer title='Geographical Locator' icon='location_on_icon'/>
