@@ -22,24 +22,20 @@ function Copyright(props) {
   const footers = [
     {
       title: 'Company',
-      description: ['Team', 'History', 'Contact us'],
+      description: [{name:'Team', link: '/team'}, {name:'History', link: '/team'}, {name:'Contact Us', link: '/support'}],
     },
     {
       title: 'Features',
       description: [
-        'Client Management',
-        'Staff Management',
-        'Admin Tools'
-     
+        {name:'Client Management', link: '/'},
+        {name:'Staff Management', link: '/'},
       ],
     },
-    {
-      title: 'Resources',
-      description: ['Resource', 'Resource name', 'Another resource', 'Final resource'],
-    },
+  
     {
       title: 'Legal',
-      description: ['Privacy policy', 'Terms of use'],
+      description: [{name:'Privacy Policy', link: 'https://www.privacypolicies.com/live/4dc05d67-88a4-407f-8947-05677c1a2df2'}, 
+      {name:'Terms of Use', link: '/terms'}],
     },
   ];
 export default function Footer() {
@@ -65,8 +61,8 @@ export default function Footer() {
               <ul>
                 {footer.description.map((item) => (
                   <li key={item}>
-                    <Link href="#" variant="subtitle1" color="text.secondary">
-                      {item}
+                    <Link href={item.link} variant="subtitle1" color="text.secondary">
+                      {item.name}
                     </Link>
                   </li>
                 ))}
