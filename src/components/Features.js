@@ -5,50 +5,14 @@ import FeatureContainer from './FeatureContainer'
 import Footer from './Footer'
 import Typography from '@mui/material/Typography'
 import Container from '@mui/material/Container'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 export default function Features() {
 
-  const features = [
-    {
-      title: 'Staff Rota',
-      icon: 'event_available_icon'
-    },
-    {
-      title: 'Staff Mobile App',
-      icon:'phone_iphone_icon'
-    },
-    {
-      title: 'Geographical Locator',
-      icon: 'location_on_icon'
-  },
-    {
-      title: 'Digital Policies',
-      icon: 'post_add_icon'
-    },
-    {
-      title: 'Client Medication List',
-      icon: 'medication_icon'
-  },
-    {
-      title: 'Client Specific Tasks',
-      icon: 'task_alt_icon'
-    },
-    {
-      title: 'Client Care Plans',
-      icon: 'library_books_icon'
-    },
-    {
-      title: 'Risk Assessments',
-      icon: 'report_problem_icon'
-    },
-    {
-      title: 'Electronic Client Notes',
-      icon: 'note_add_icon'
-    }
-  ]
+
   return (
     <div >
-        <Navbar />
         <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 8, p: 4, pb: 0 }}>
           <Typography
             component="h1"
@@ -66,13 +30,42 @@ export default function Features() {
             Our standard features are great for small or start up care companies looking to improve the way they work
           </Typography>
           </Container>
-          <div id="features">
-          {features.map((feature, i)=>
-          <FeatureContainer key={i} title={feature.title} icon={feature.icon}/>
 
-        )}
-          </div>
-       
+          <section id='staff-container'>
+           
+            <div className='width-40' >
+              <Carousel autoPlay={false} showArrows={true} showStatus={false} infiniteLoop={true}>
+                <FeatureContainer title='Staff Rota' icon='event_available_icon'/>
+                <FeatureContainer title='Staff Mobile App' icon='phone_iphone_icon'/>
+                <FeatureContainer title='Geographical Locator' icon='location_on_icon'/>
+                <FeatureContainer title='Digital Policies' icon='post_add_icon'/>
+              </Carousel>
+            </div>
+
+            <div className='width-60'>
+                <img className='feature-img' src='https://care-quality-digital-resources.s3.eu-west-2.amazonaws.com/pexels-picjumbocom-196650.jpg' alt=""/>
+            </div>
+            
+          </section>
+
+          <section id='staff-container'>
+           
+            <div className='width-60'>
+              <img className='feature-img' src='https://care-quality-digital-resources.s3.eu-west-2.amazonaws.com/pexels-matthias-zomer-339620.jpg' alt=""/>
+
+            </div>
+            
+            <div className='width-40'>
+              <Carousel autoPlay={false} showArrows={true} showStatus={false} infiniteLoop={true}>
+                <FeatureContainer title='Client Medication List - eMar included as standard' icon='medication_icon'/>
+                <FeatureContainer title='Client Specific Tasks' icon='task_alt_icon'/>
+                <FeatureContainer title='Client Care Plans' icon='library_books_icon'/>
+                <FeatureContainer title='Risk Assessments' icon='report_problem_icon'/>
+                <FeatureContainer title='Electronic Client Notes' icon='note_add_icon'/>
+              </Carousel>
+            </div>
+            
+          </section>
     
         <Footer />
     </div>

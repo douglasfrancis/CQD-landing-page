@@ -13,7 +13,7 @@ export default function FeatureContainer({icon, title}) {
           component="h1"
           variant="h5"
           align="center"
-          color="text.primary"
+          sx={{color: '#266'}}
           gutterBottom
         >
           {title}

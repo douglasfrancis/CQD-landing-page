@@ -1,0 +1,48 @@
+header {
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    z-index: 999;
+    background-color: #fff;
+    width: 100vw;
+    height: 70px;
+    top: 0;
+    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
+}
+
+#book-demo{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #266867;
+    border: 1px solid #266867;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+
+}
+
+#book-demo:hover{
+    cursor: pointer;
+    background-color: #548b8a;
+}
+
+#log-in{
+    color: #266867;
+    font-weight: bold ;
+    background-color: unset;
+    border: unset;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+#log-in:hover{
+    background-color: #dfefed;
+    cursor: pointer;
+}

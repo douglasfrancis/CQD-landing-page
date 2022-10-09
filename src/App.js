@@ -11,12 +11,14 @@ import 'react-toastify/dist/ReactToastify.css';
 import Support from './components/Support';
 import Pricing from './components/Pricing';
 import Features from './components/Features';
+import Navbar from './components/Navbar';
 
 
 function App() {
   return (
     <BrowserRouter>
       <ToastContainer position='top-center'/>
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Features />}/>
         <Route path="/pricing" element={<Pricing />}/>

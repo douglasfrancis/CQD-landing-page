@@ -37,8 +37,6 @@ function PricingContent() {
     <React.Fragment>
       <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
       <CssBaseline />
-      <Navbar/>
-      {/* Hero unit */}
       <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 8, p: 4 }}>
         <Typography
           component="h1"

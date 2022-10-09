@@ -6,7 +6,6 @@ import Contact from './Contact'
 export default function Support() {
   return (
     <div>
-        <Navbar />
         <Contact />
         <Footer />
       </div>
