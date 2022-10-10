@@ -1,0 +1,30 @@
+#team-container{
+    max-width: 1200px;
+    height: 100vh;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    flex-wrap: wrap;
+}
+
+.staff-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    padding: 10px;
+    margin: 1rem;
+    min-width: 200px;
+    width: 15vw;
+
+}
+
+.staff-img{
+    height: 150px;
+    border-radius: 75px;
+}
+
+.names{
+    color: #266867;
+}

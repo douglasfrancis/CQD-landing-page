@@ -35,10 +35,14 @@ export default function Features() {
            
             <div className='width-40' id='first-carousel'>
               <Carousel autoPlay={true} showArrows={true} showStatus={false} infiniteLoop={true}  >
-                <FeatureContainer title='Staff Rota' icon='event_available_icon'/>
-                <FeatureContainer title='Staff Mobile App' icon='phone_iphone_icon'/>
-                <FeatureContainer title='Geographical Locator' icon='location_on_icon'/>
-                <FeatureContainer title='Digital Policies' icon='post_add_icon'/>
+                <FeatureContainer title='Staff Rota' icon='event_available_icon' 
+                description="Seamlesly manage all your care staff, anytime and anywhere."/>
+                <FeatureContainer title='Staff Mobile App' icon='phone_iphone_icon'
+                description="Access to shifts and visits for all carers. Available on both Android and Apple."/>
+                <FeatureContainer title='Geographical Locator' icon='location_on_icon'
+                description="Visually keep tabs on all your workers whilst on shift."/>
+                <FeatureContainer title='Digital Policies' icon='post_add_icon'
+                description="Keep all your company policies in one place with quick and easy access."/>
               </Carousel>
             </div>
 
@@ -57,11 +61,16 @@ export default function Features() {
             
             <div className='width-40'>
               <Carousel autoPlay={true} showArrows={true} showStatus={false} infiniteLoop={true}>
-                <FeatureContainer title='Client Medication List - eMar included as standard' icon='medication_icon'/>
-                <FeatureContainer title='Client Specific Tasks' icon='task_alt_icon'/>
-                <FeatureContainer title='Client Care Plans' icon='library_books_icon'/>
-                <FeatureContainer title='Risk Assessments' icon='report_problem_icon'/>
-                <FeatureContainer title='Electronic Client Notes' icon='note_add_icon'/>
+                <FeatureContainer title='Client Medication List - eMar included as standard' icon='medication_icon'
+                description="Add all your clients medical requirements and visually manage their administering of medication using the eMAR."/>
+                <FeatureContainer title='Client Specific Tasks' icon='task_alt_icon'
+                description="Assign tasks to client visits and staff can easily view and complete them within the mobile app."/>
+                <FeatureContainer title='Client Care Plans' icon='library_books_icon'
+                description=""/>
+                <FeatureContainer title='Risk Assessments' icon='report_problem_icon'
+                description=""/>
+                <FeatureContainer title='Electronic Client Notes' icon='note_add_icon'
+                description="Quickly make notes for each visit using the mobile app."/>
               </Carousel>
             </div>
             

@@ -3,7 +3,7 @@ import Icon from '@mui/material/Icon';
 import './Features.css'
 import Typography from '@mui/material/Typography';
 
-export default function FeatureContainer({icon, title}) {
+export default function FeatureContainer({icon, title, description}) {
   return (
     <div className='feature-container'>
 
@@ -17,6 +17,16 @@ export default function FeatureContainer({icon, title}) {
           gutterBottom
         >
           {title}
+        </Typography>
+
+        <Typography
+          component="p"
+          variant="p"
+          align="center"
+          sx={{color: '#266'}}
+          gutterBottom
+        >
+          {description}
         </Typography>
 
     </div>
