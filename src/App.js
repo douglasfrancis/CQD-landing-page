@@ -14,6 +14,8 @@ import Features from './components/Features';
 import Navbar from './components/Navbar';
 import Terms from './components/Terms';
 import Team from './components/Team';
+import Accessibility from './components/Accessibility';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -26,7 +28,9 @@ function App() {
         <Route path="/support" element={<Support />}/>
         <Route path="/terms" element={<Terms />}/>
         <Route path="/team" element={<Team />}/>
+        <Route path="/accessibility" element={<Accessibility />}/>
       </Routes>
+      <Footer />
   </BrowserRouter>
   );
 }

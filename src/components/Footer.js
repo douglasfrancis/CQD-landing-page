@@ -35,7 +35,8 @@ function Copyright(props) {
     {
       title: 'Legal',
       description: [{name:'Privacy Policy', link: 'https://www.privacypolicies.com/live/4dc05d67-88a4-407f-8947-05677c1a2df2'}, 
-      {name:'Terms of Use', link: '/terms'}],
+      {name:'Terms of Use', link: '/terms'},
+      {name:'Accessibility Statement', link: '/accessibility'}],
     },
   ];
 export default function Footer() {

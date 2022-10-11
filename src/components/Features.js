@@ -76,7 +76,6 @@ export default function Features() {
             
           </section>
     
-        <Footer />
     </div>
   )
 }

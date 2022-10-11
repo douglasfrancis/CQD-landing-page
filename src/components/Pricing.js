@@ -31,7 +31,7 @@ function PricingContent() {
 
 
   return (
-    <React.Fragment>
+    <>
      
       <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 8, p: 4 }}>
         <Typography
@@ -120,10 +120,8 @@ function PricingContent() {
          
         </Grid>
       </Container>
-      {/* Footer */}
-      <Footer />
-      {/* End footer */}
-    </React.Fragment>
+     
+    </>
   );
 }
 
