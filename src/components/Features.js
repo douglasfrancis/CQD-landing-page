@@ -47,7 +47,7 @@ export default function Features() {
             </div>
 
             <div className='width-60'>
-                <img className='feature-img' src='https://care-quality-digital-resources.s3.eu-west-2.amazonaws.com/pexels-picjumbocom-196650.jpg' alt=""/>
+                <img className='feature-img' src='https://firebasestorage.googleapis.com/v0/b/care-quality-digital.appspot.com/o/Website%2Fstaff-img.jpg?alt=media&token=8fa79818-f7ca-4b31-95a2-4902101c1125' alt=""/>
             </div>
             
           </section>
@@ -55,7 +55,7 @@ export default function Features() {
           <section id='client-container'>
            
             <div className='width-60'>
-              <img className='feature-img' src='https://care-quality-digital-resources.s3.eu-west-2.amazonaws.com/pexels-matthias-zomer-339620.jpg' alt=""/>
+              <img className='feature-img' src='https://firebasestorage.googleapis.com/v0/b/care-quality-digital.appspot.com/o/Website%2Fclient-img.jpg?alt=media&token=df0f91ca-c4ce-46f1-aa41-64707d7727fe' alt=""/>
 
             </div>
             
