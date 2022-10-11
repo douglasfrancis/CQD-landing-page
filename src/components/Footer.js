@@ -41,7 +41,7 @@ function Copyright(props) {
   ];
 export default function Footer() {
   return (
-      <>
+      <footer>
             <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
 
     <Container
@@ -73,6 +73,6 @@ export default function Footer() {
         </Grid>
         <Copyright sx={{ mt: 5 }} />
       </Container>
-      </>
+      </footer>
   )
 }

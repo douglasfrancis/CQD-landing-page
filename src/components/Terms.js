@@ -3,7 +3,7 @@ import './Terms.css'
 
 export default function Terms() {
   return (
-    <div id='terms-container'>
+    <main id='terms-container'>
         
         <h1>Terms of use</h1>
 
@@ -338,6 +338,6 @@ This section outlines how disputes may be resolved.
 
 <p>54. Interpretation: Words like ‘include’ and ‘including’ are not words of limitation and where anything is within our discretion we mean our sole discretion. 
 </p>     
-    </div>
+    </main>
   )
 }

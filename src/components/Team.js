@@ -3,7 +3,7 @@ import './Team.css'
 
 export default function Team() {
   return (
-    <div id='team-container'>
+    <main id='team-container'>
         <div className='staff-container'>
           <img className='staff-img' alt='Jason Sandywell' src='https://firebasestorage.googleapis.com/v0/b/care-quality-digital.appspot.com/o/Website%2Fjason.jpeg?alt=media&token=088cc1ba-225d-45e8-ab5a-633316383516' />
           <h3 className='names'>Jason Sandywell</h3>
@@ -31,6 +31,6 @@ export default function Team() {
           <p>His insights and input have been highly valuable to Care Quality Digital and is definitely the sensible brains of the bunch!</p>
 
         </div>
-    </div>
+    </main>
   )
 }

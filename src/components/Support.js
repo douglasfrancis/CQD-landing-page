@@ -3,8 +3,8 @@ import Contact from './Contact'
 
 export default function Support() {
   return (
-      <div>
+      <main>
         <Contact />
-      </div>
+      </main>
   )
 }

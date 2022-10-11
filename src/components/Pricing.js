@@ -31,7 +31,7 @@ function PricingContent() {
 
 
   return (
-    <>
+    <main>
      
       <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 8, p: 4 }}>
         <Typography
@@ -91,7 +91,7 @@ function PricingContent() {
                       /mo +VAT
                     </Typography>
                   </Box >
-                  <ul>
+                  
                     
                       
                       <Link href='/'>
@@ -99,13 +99,13 @@ function PricingContent() {
                           component="li"
                           variant="subtitle1"
                           align="center"
-                          sx={{color:'#288'}}
+                          sx={{color:'#266867'}}
                         >
                         All features included
                         </Typography>
                       </Link>
                  
-                  </ul>
+                 
                 </CardContent>
                 <CardActions sx={{backgroundColor: '#f2f9f8'}}>
                   <Link href="/support" sx={{textDecoration: 'none', margin: '0 auto'}}>
@@ -121,7 +121,7 @@ function PricingContent() {
         </Grid>
       </Container>
      
-    </>
+    </main>
   );
 }
 

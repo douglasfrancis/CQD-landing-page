@@ -12,7 +12,7 @@ export default function Features() {
 
 
   return (
-    <div >
+    <main >
         <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 8, p: 4, pb: 4 }}>
           <Typography
             component="h1"
@@ -31,7 +31,7 @@ export default function Features() {
           </Typography>
           </Container>
 
-          <section id='staff-container'>
+          <section className='staff-container'>
            
             <div className='width-40' id='first-carousel'>
               <Carousel autoPlay={true} showArrows={true} showStatus={false} infiniteLoop={true}  >
@@ -52,7 +52,7 @@ export default function Features() {
             
           </section>
 
-          <section id='staff-container'>
+          <section className='staff-container'>
            
             <div className='width-60'>
               <img className='feature-img' src='https://care-quality-digital-resources.s3.eu-west-2.amazonaws.com/pexels-matthias-zomer-339620.jpg' alt=""/>
@@ -76,6 +76,6 @@ export default function Features() {
             
           </section>
     
-    </div>
+    </main>
   )
 }

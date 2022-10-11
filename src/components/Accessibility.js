@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Accessibility() {
   return (
-    <div style={{padding: '3rem'}}>
+    <main style={{padding: '3rem'}}>
         <h2>Accessibility Statement for <span className="basic-information website-name">Care Quality Digital</span></h2>
         <p>
             This is an accessibility statement from <span className="basic-information organization-name">Care Quality Digital Ltd</span>.
@@ -48,6 +48,6 @@ export default function Accessibility() {
             <span className="basic-information statement-created-date">10 October 2022</span>
             using the <a href="https://www.w3.org/WAI/planning/statements/">W3C Accessibility Statement Generator Tool</a>.
         </p>
-    </div>
+    </main>
   )
 }
