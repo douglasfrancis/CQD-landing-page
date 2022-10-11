@@ -96,7 +96,7 @@ function PricingContent() {
                       
                       <Link href='/'>
                         <Typography
-                          component="li"
+                          component="p"
                           variant="subtitle1"
                           align="center"
                           sx={{color:'#266867'}}

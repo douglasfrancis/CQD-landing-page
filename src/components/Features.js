@@ -31,7 +31,7 @@ export default function Features() {
           </Typography>
           </Container>
 
-          <section className='staff-container'>
+          <section id='staff-container'>
            
             <div className='width-40' id='first-carousel'>
               <Carousel autoPlay={true} showArrows={true} showStatus={false} infiniteLoop={true}  >
@@ -52,7 +52,7 @@ export default function Features() {
             
           </section>
 
-          <section className='staff-container'>
+          <section id='client-container'>
            
             <div className='width-60'>
               <img className='feature-img' src='https://care-quality-digital-resources.s3.eu-west-2.amazonaws.com/pexels-matthias-zomer-339620.jpg' alt=""/>

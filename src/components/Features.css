@@ -11,12 +11,21 @@
 }
 
 
-.staff-container{
+#staff-container{
   width: 100vw;
   height: 600px;
   display: flex;
   flex-direction: row;
   position: relative;
+}
+
+#client-container{
+  width: 100vw;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+
 }
 
 .width-40{
@@ -54,6 +63,10 @@
     width: 100vw;
   }
   #staff-container{
+    height: 1200px;
+    flex-direction: column;
+  }
+  #client-container{
     height: 1200px;
     flex-direction: column;
   }
