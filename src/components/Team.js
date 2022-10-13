@@ -23,14 +23,14 @@ export default function Team() {
 
         </div>
 
-        <div className='staff-container'>
+        {/*<div className='staff-container'>
           <img className='staff-img' alt='Scott' src='https://firebasestorage.googleapis.com/v0/b/care-quality-digital.appspot.com/o/Website%2Fscott.jpeg?alt=media&token=0848d620-91f5-4f75-9fe6-966410b8285d'/>
           <h3 className='names'>Scott</h3>
           <p>After being born with Cerebral Palsy, Scott has been receiving care for a large part of his life.</p>
           <p>Regardless of this hurdel, Scott managed to study Law with much success.</p>
           <p>His insights and input have been highly valuable to Care Quality Digital and is definitely the sensible brains of the bunch!</p>
 
-        </div>
+        </div>*/}
     </main>
   )
 }
