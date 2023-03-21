@@ -10,7 +10,9 @@ export default function Contact() {
     const [msg, setMsg] = useState("")
     const [number, setNumber] = useState("")
     const [error, setError] = useState(false)
-    const [sent, setSent] = useState(false)
+    const [sent, setSent] = useState(false)   
+    const [checked, setChecked] = useState(false)
+
 
     const payload ={
         name, number, email, msg
@@ -109,6 +111,9 @@ export default function Contact() {
                 <TextField label="Email" type={'email'} fullWidth  sx={{mb:2}} value={email} onChange={(e)=>setEmail(e.target.value)}/>
                 <TextField label="Number" type={'number'} fullWidth  sx={{mb:2}} value={number} onChange={(e)=>setNumber(e.target.value)}/>
                 <TextField label="Please provide some basic info about your company or request" fullWidth multiline rows={5}  sx={{mb:2}} value={msg} onChange={(e)=>setMsg(e.target.value)}/>
+                <p style={{fontSize: '0.8rem', textAlign: 'left', display: 'inline-block'}}><span><input style={{height: 20, width: 20, marginRight: 10, display:'inline-block'}} type='checkbox'  onChange={()=>setChecked(!checked)}/></span>
+            I accept the Care Quality Digital Terms of Service, Privacy Policy, and consent to allow Care Quality Digital to store and process the personal information submitted above to communicate with me and provide me with access to Care Quality Digital services.
+            </p>
                 <Button disabled={loading} type="submit" variant='outlined' sx={{color: '#288', borderColor: '#288', width: '200px'}}>Submit</Button>
                 </form>
         
