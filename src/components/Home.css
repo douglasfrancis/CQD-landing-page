@@ -1,0 +1,71 @@
+#home{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: calc(100vh - 150px);
+    max-width: 1600px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#home-info{
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+    min-height: 400px;
+    width: 40%;
+    max-width: 90vw;
+}
+
+#home-info h1{
+    font-family: GothamBlack, sans-serif;
+    font-size: 3vw;
+    color: #266867;
+}
+
+#screenshot-img{
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;    
+    width: 700px;
+    max-width: 90vw;
+    margin: 1rem auto;
+    border-radius: 5px;
+}
+
+#email-input{
+    height: 50px;
+    border-radius: 25px;
+    padding-left: 20px;
+    width: 60%;
+    min-width: 250px;
+    margin-right: 0.5rem;
+    border: 2px solid #266867;
+}
+
+#email-input::placeholder{
+    font-family: GothamBold;
+    color: #919191;
+}
+
+@media only screen and (max-width: 1300px) {
+
+    #home-info{
+        width: 90vw;
+        height: auto;
+    }
+    #home-info h1{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+   
+    #email-input{
+        width: 90vw;
+        max-width: 600px;
+        margin: 1rem auto;
+    }
+   
+  }

@@ -6,9 +6,10 @@ import {
 } from "react-router-dom";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import './App.css'
 
 //components
-import Support from './components/Support';
+import Demo from './components/Demo';
 import Pricing from './components/Pricing';
 import Features from './components/Features';
 import Navbar from './components/Navbar';
@@ -16,6 +17,8 @@ import Terms from './components/Terms';
 import Team from './components/Team';
 import Accessibility from './components/Accessibility';
 import Footer from './components/Footer';
+import Home from './components/Home';
+import Support from './components/Support';
 
 function App() {
   return (
@@ -23,8 +26,10 @@ function App() {
       <ToastContainer position='top-center'/>
       <Navbar/>
       <Routes>
-        <Route path="/" element={<Features />}/>
+        <Route path="/" element={<Home />}/>
+        <Route path="/features" element={<Features />}/>
         <Route path="/pricing" element={<Pricing />}/>
+        <Route path="/book-demo" element={<Demo />}/>
         <Route path="/support" element={<Support />}/>
         <Route path="/terms" element={<Terms />}/>
         <Route path="/team" element={<Team />}/>

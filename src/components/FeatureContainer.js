@@ -1,33 +1,20 @@
 import React from 'react'
 import Icon from '@mui/material/Icon';
 import './Features.css'
-import Typography from '@mui/material/Typography';
 
 export default function FeatureContainer({icon, title, description}) {
   return (
     <div className='feature-container'>
 
-       <Icon sx={{color:'#288', fontSize: 60}}>{icon}</Icon>
+        <Icon sx={{color:'#dfefed', fontSize: 40}}>{icon}</Icon>
 
-       <Typography
-          component="h1"
-          variant="h5"
-          align="center"
-          sx={{color: '#266'}}
-          gutterBottom
-        >
+        <h5 style={{fontFamily:'GothamBold', textAlign:'center', fontSize:18, color:'#fff'}}>
           {title}
-        </Typography>
+        </h5>
 
-        <Typography
-          component="p"
-          variant="p"
-          align="center"
-          sx={{color: '#266'}}
-          gutterBottom
-        >
-          {description}
-        </Typography>
+      {/*<p style={{textAlign:'left', marginTop:5}}>
+        {description}
+      </p>*/}
 
     </div>
   )

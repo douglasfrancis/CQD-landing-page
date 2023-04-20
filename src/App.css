@@ -1,5 +1,35 @@
+@font-face {
+    font-family: Gotham;
+    src: url(./Fonts/Gotham-Light.otf);
+    font-display: fallback;
+  }
+
+  @font-face {
+    font-family: GothamBold;
+    src: url(./Fonts/Gotham-Bold.otf);
+    font-display: fallback;
+  }
+  @font-face {
+    font-family: GothamBlack;
+    src: url(./Fonts/Gotham-Black.otf);
+    font-display: fallback;
+  }
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Gotham';
 }
+
+.gotham-black{
+  font-family: GothamBlack;
+  color: #266867;
+  margin: 1rem 0;
+}
+
+.gotham-bold{
+  color: #313131;
+  font-family: GothamBold;
+}
+

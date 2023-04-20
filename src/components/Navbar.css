@@ -4,30 +4,38 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0 2rem;
     position: sticky;
     z-index: 999;
     background-color: #fff;
     box-sizing: border-box;
     width: 100vw;
-    height: auto;
+    height: 100px;
     top: 0;
-    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
 }
 
-#book-demo{
+nav a{
+    text-decoration: none;
+    margin: 1.5rem;
+    color: #266867;
+    font-family: GothamBold;
+    font-size: 1.1rem;
+}
+
+.book-demo{
     width: 150px;
-    height: 40px;
-    border-radius: 20px;
+    height: 50px;
+    border-radius: 25px;
     background-color: #266867;
     border: 1px solid #266867;
     color: white;
     font-weight: bold;
     transition: 0.5s;
+    font-family: GothamBold;
 
 }
 
-#book-demo:hover{
+.book-demo:hover{
     cursor: pointer;
     background-color: #548b8a;
 }
@@ -38,12 +46,97 @@ header {
     background-color: unset;
     border: unset;
     width: 100px;
-    height: 40px;
-    border-radius: 20px;
+    height: 50px;
+    border-radius: 25px;
     transition: 0.5s;
+    margin: 0 0.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-family: GothamBold;
 }
 
 #log-in:hover{
     background-color: #dfefed;
     cursor: pointer;
 }
+
+#nav-logo{
+    height: 80px;
+    margin-top: 20px
+}
+
+#burger-menu{
+    display: none;
+}
+
+.sidebar-open{
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+
+}
+.sidebar-closed{
+    width: 0;
+    display: none;
+}
+#sidebar-contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+
+@media only screen and (max-width: 980px) {
+    #nav-logo{
+        height: 60px;
+    }
+    nav a{
+        font-size: 0.9rem;
+    }
+    #book-demo, #log-in{
+        height: 40px;
+        width: 110px;
+    }
+  }
+
+  @media only screen and (max-width: 830px) {
+    #log-in{
+        display: none;
+    }
+    header{
+        height: auto;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    #burger-menu{
+        display: block;
+        height: 40px;
+        margin-top: 0.5rem;
+    }
+    #desktop-nav{
+        display: none;
+    }
+    #nav-logo{
+        height: 50px;
+    }
+    header{
+        padding: 0 1rem;
+    }
+    .book-demo{
+        width: 90vw;
+        max-width: 600px;
+        margin: 0.5rem auto;
+    }
+   
+  }
+  @media only screen and (max-width: 400px) {
+    #book-demo{
+        display: none;
+    }
+  }

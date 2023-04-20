@@ -9,10 +9,11 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Footer from './Footer';
-import Link from '@mui/material/Link';
+import {Link} from 'react-router-dom';
 import TextField from '@mui/material/TextField'
+import './Pricing.css'
 
-function PricingContent() {
+export default function Pricing() {
 
   const [number, setNumber] = useState("")
   const [price, setPrice] = useState(0)
@@ -33,98 +34,42 @@ function PricingContent() {
   return (
     <main>
      
-      <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 8, p: 4 }}>
-        <Typography
-          component="h1"
-          variant="h3"
-          align="center"
-          color="text.primary"
-          gutterBottom
-        >
-          Pricing
-        </Typography>
-        <Typography variant="h5" align="center" color="text.secondary" component="p">
-        We believe all features should come as standard, ensuring your business is supported no matter how big or small.        
-      </Typography>
+      <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 8, p: 4, textAlign:'center' }}>
+        <h1 className='gotham-black'>Pricing</h1>
+        <p className='gotham-bold'>We believe all features should come as standard, ensuring your business is supported no matter how big or small.</p>   
       </Container>
-      {/* End hero unit */}
-      <Container maxWidth="md" component="main" >
-        <Grid container spacing={5} sx={{justifyContent:'center'}}>
+      
+      <div id='pricing-box' >
           
-           
-            <Grid
-              item
-              
-              xs={12}
-              sm={12}
-              md={4}
-            >
-              <Card>
-                <CardHeader
-                  title={"Pricing Calculator"}
-                  titleTypographyProps={{ align: 'center' }}
-                  subheaderTypographyProps={{
-                    align: 'center',
-                  }}
-                  sx={{
-                    backgroundColor:'#32948c', color: '#fff'
-                  }}
-                />
-                <CardContent sx={{backgroundColor: '#f2f9f8'}}>
-                  <Box
-                    sx={{
-                      display: 'flex',
-                      flexDirection: 'column',
-                      justifyContent: 'center',
-                      alignItems: 'center',
-                      mb: 2,
-                    }}
-                  >
-                  
-
-                    <TextField type='number' fullWidth label="Number of Clients" value={number} onChange={(e)=>setNumber(e.target.value)}/>
-                      
-                    <Typography component="h2" variant="h3" color="text.primary">
-                      £{price}
-                    </Typography>
-                    <Typography variant="h6" color="text.secondary">
-                      /mo +VAT
-                    </Typography>
-                  </Box >
-                  
-                    
-                      
-                      <Link href='/'>
-                        <Typography
-                          component="p"
-                          variant="subtitle1"
-                          align="center"
-                          sx={{color:'#266867'}}
-                        >
-                        All features included
-                        </Typography>
-                      </Link>
-                 
-                 
-                </CardContent>
-                <CardActions sx={{backgroundColor: '#f2f9f8'}}>
-                  <Link href="/support" sx={{textDecoration: 'none', margin: '0 auto'}}>
-                    <Button  variant="contained" sx={{backgroundColor: '#266867', color: '#fff' }}>
-                      Book Demo
-                    </Button>
-                  </Link>
-                  
-                </CardActions>
-              </Card>
-            </Grid>
-         
-        </Grid>
-      </Container>
+           <div id='pricing-header'>
+             <h2 style={{color:'#fff', fontFamily: 'GothamBold'}}>Pricing Calculator</h2>
+           </div>
+          
+          <div id='pricing-info'>
+              <TextField type='number' sx={{width: 130, backgroundColor:'#fff'}} label="No. of Clients" value={number} onChange={(e)=>setNumber(e.target.value)}/>
+              <div>  
+                <h3 className='gotham-bold' style={{margin: 20, fontSize: 30}}>
+                          £{price}
+                </h3>
+                <h6  style={{ fontSize: 20}}>
+                          /mo +VAT
+                </h6>
+              </div>  
+              <Link to='/features'>
+                <p style={{color:'#266'}}>All features included</p>
+              </Link>
+                   
+              <i style={{maxWidth: '90%'}}>1 month free trial, no credit card required</i>
+                   
+                
+              <Link to="/book-demo" >
+                <Button  variant="contained" sx={{backgroundColor: '#266867', color: '#fff' }}>
+                    Book Demo
+                </Button>
+              </Link>
+          </div>
+      </div>
      
     </main>
   );
-}
-
-export default function Pricing() {
-  return <PricingContent />;
 }

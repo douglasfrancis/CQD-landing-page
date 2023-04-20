@@ -1,41 +1,71 @@
 import React from 'react'
-import Navbar from './Navbar'
 import './Features.css'
 import FeatureContainer from './FeatureContainer'
-import Footer from './Footer'
-import Typography from '@mui/material/Typography'
 import Container from '@mui/material/Container'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+import Clients from '../Assets/clients.png'
+import screenshot from '../Assets/screenshot.png'
 
 export default function Features() {
 
 
   return (
     <main >
-        <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 8, p: 4, pb: 4 }}>
-          <Typography
-            component="h1"
-            variant="h4"
-            align="center"
-            color="text.primary"
-            gutterBottom
-          >
+        <Container disableGutters maxWidth="md" component="main" sx={{ pt: 8, p: 4, pb: 4, my:3 }}>
+          <h2 className='gotham-black' style={{textAlign:'center'}}>
             Standard Features
-          </Typography>
+          </h2>
 
-          <Typography
-            variant="h5" align="center" color="text.secondary" component="p"
-          >
-            At Care Quality Digital, we believe that all features should come as standard to ensure even the smallest companies have the tools to support their compliance with CQC
-          </Typography>
+          <p className='gotham-bold' style={{textAlign:'center', fontSize: 20, color: '#919191'}}>
+            At Care Quality Digital, we believe that all features should come as standard to ensure even the smallest care providers have the tools to support their compliance with CQC
+          </p>
           </Container>
 
-          <section id='staff-container'>
+          <section id='client-container'>
+
            
-            <div className='width-40' id='first-carousel'>
-              <Carousel autoPlay={true} showArrows={true} showStatus={false} infiniteLoop={true}  >
-                <FeatureContainer title='Staff Rota' icon='event_available_icon' 
+            <div id='client-features'>
+              <h2 className='gotham-black' style={{color:'#fff',fontSize:30}}>Clients</h2>
+              <p className='gotham-bold' style={{color:'#fff', fontSize: 20}}>Client management is a critical function for any home care provider.<br/><br/> Our client management system helps home care providers improve efficiency, reduce costs, and improve the quality of care they provide.</p>
+
+              <div className='feature-list'>
+                <FeatureContainer title='Medication and eMar' icon='medication_icon'
+                  description="Add all your clients medical requirements and visually manage their administering of medication using the eMAR."/>
+                  <FeatureContainer title='Client Tasks' icon='task_alt_icon'
+                  description="Assign tasks to client visits and staff can easily view and complete them within the mobile app."/>
+                  <FeatureContainer title='Care Plans' icon='library_books_icon'
+                  description=""/>
+                  <FeatureContainer title='Risk Assessments' icon='report_problem_icon'
+                  description=""/>
+                  <FeatureContainer title='Electronic Notes' icon='note_add_icon'
+                  description="Quickly make notes for each visit using the mobile app."/>
+              </div>
+
+                
+
+               
+            </div>
+
+            <div style={{display:'flex', alignItems:'center', justifyContent:'center', flexDirection:'column'}}>
+                <img className='screenshot'  src={Clients} alt="Domiciliary Home care app - Care Quality Digital client screen "/>
+                <i style={{color:'#fff', marginTop: 20}}>Client list overview - Snapshot of clients name, image, DOB and address</i>
+
+            </div>
+            
+          </section>
+
+          <section id='staff-container'>
+
+            <div className='width-60'>
+
+              <img className='screenshot' src={screenshot} alt=""/>
+
+            </div>
+            
+            <div className='width-40'>
+            <h2 className='gotham-black'>Staff</h2>
+
+            <FeatureContainer title='Staff Rota' icon='event_available_icon' 
                 description="Seamlesly manage all your care staff, anytime and anywhere."/>
                 <FeatureContainer title='Staff Mobile App' icon='phone_iphone_icon'
                 description="Access to shifts and visits for all carers. Available on both Android and Apple."/>
@@ -43,35 +73,7 @@ export default function Features() {
                 description="Visually keep tabs on all your workers whilst on shift."/>
                 <FeatureContainer title='Digital Policies' icon='post_add_icon'
                 description="Keep all your company policies in one place with quick and easy access."/>
-              </Carousel>
-            </div>
-
-            <div className='width-60'>
-                <img className='feature-img' src='https://firebasestorage.googleapis.com/v0/b/care-quality-digital.appspot.com/o/Website%2Fstaff-img.jpg?alt=media&token=8fa79818-f7ca-4b31-95a2-4902101c1125' alt=""/>
-            </div>
-            
-          </section>
-
-          <section id='client-container'>
            
-            <div className='width-60'>
-              <img className='feature-img' src='https://firebasestorage.googleapis.com/v0/b/care-quality-digital.appspot.com/o/Website%2Fclient-img.jpg?alt=media&token=df0f91ca-c4ce-46f1-aa41-64707d7727fe' alt=""/>
-
-            </div>
-            
-            <div className='width-40'>
-              <Carousel autoPlay={true} showArrows={true} showStatus={false} infiniteLoop={true}>
-                <FeatureContainer title='Client Medication List - eMar included as standard' icon='medication_icon'
-                description="Add all your clients medical requirements and visually manage their administering of medication using the eMAR."/>
-                <FeatureContainer title='Client Specific Tasks' icon='task_alt_icon'
-                description="Assign tasks to client visits and staff can easily view and complete them within the mobile app."/>
-                <FeatureContainer title='Client Care Plans' icon='library_books_icon'
-                description=""/>
-                <FeatureContainer title='Risk Assessments' icon='report_problem_icon'
-                description=""/>
-                <FeatureContainer title='Electronic Client Notes' icon='note_add_icon'
-                description="Quickly make notes for each visit using the mobile app."/>
-              </Carousel>
             </div>
             
           </section>
