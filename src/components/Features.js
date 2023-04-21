@@ -45,7 +45,7 @@ export default function Features() {
 
             <div style={{display:'flex', alignItems:'center', justifyContent:'center', flexDirection:'column'}}>
                 <img className='screenshot'  src={Clients} alt="Domiciliary Home care app - Care Quality Digital client screen "/>
-                <i style={{color:'#fff', marginTop: 20}}>Client list overview - Snapshot of clients name, image, DOB and address</i>
+                <i style={{color:'#266', marginTop: 20}}>Client list overview - Snapshot of clients name, image, DOB and address</i>
 
             </div>
             
