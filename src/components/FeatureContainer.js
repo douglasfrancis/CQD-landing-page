@@ -6,9 +6,9 @@ export default function FeatureContainer({icon, title, description}) {
   return (
     <div className='feature-container'>
 
-        <Icon sx={{color:'#dfefed', fontSize: 40}}>{icon}</Icon>
+        <Icon className='feature-icon'>{icon}</Icon>
 
-        <h5 style={{fontFamily:'GothamBold', textAlign:'center', fontSize:18, color:'#fff'}}>
+        <h5 className='feature-title' >
           {title}
         </h5>
 

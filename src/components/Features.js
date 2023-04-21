@@ -25,8 +25,8 @@ export default function Features() {
 
            
             <div id='client-features'>
-              <h2 className='gotham-black' style={{color:'#fff',fontSize:30}}>Clients</h2>
-              <p className='gotham-bold' style={{color:'#fff', fontSize: 20}}>Client management is a critical function for any home care provider.<br/><br/> Our client management system helps home care providers improve efficiency, reduce costs, and improve the quality of care they provide.</p>
+              <h2 className='gotham-black' style={{fontSize:30}}>Clients</h2>
+              <p className='gotham-bold' style={{ fontSize: 20, color: '#919191'}}>Client management is a critical function for any home care provider.<br/><br/> Our client management system helps home care providers improve efficiency, reduce costs, and improve the quality of care they provide.</p>
 
               <div className='feature-list'>
                 <FeatureContainer title='Medication and eMar' icon='medication_icon'
@@ -41,9 +41,6 @@ export default function Features() {
                   description="Quickly make notes for each visit using the mobile app."/>
               </div>
 
-                
-
-               
             </div>
 
             <div style={{display:'flex', alignItems:'center', justifyContent:'center', flexDirection:'column'}}>
@@ -56,16 +53,18 @@ export default function Features() {
 
           <section id='staff-container'>
 
-            <div className='width-60'>
+            <div style={{display:'flex', alignItems:'center', justifyContent:'center', flexDirection:'column', marginRight: 20}}>
 
               <img className='screenshot' src={screenshot} alt=""/>
+              <i style={{color:'#266', marginTop: 20}}>Staff rota view - Quickly create custom rotas for all your staff</i>
 
             </div>
             
-            <div className='width-40'>
+            <div >
             <h2 className='gotham-black'>Staff</h2>
-
-            <FeatureContainer title='Staff Rota' icon='event_available_icon' 
+            <p className='gotham-bold' style={{ fontSize: 20, color: '#919191'}}>Our home care app makes it easy to create and manage staff schedules, request and manage holidays and absence, communicate with staff, access important documents, and generate reports.</p>
+            <div className='feature-list'>
+              <FeatureContainer title='Staff Rota' icon='event_available_icon' 
                 description="Seamlesly manage all your care staff, anytime and anywhere."/>
                 <FeatureContainer title='Staff Mobile App' icon='phone_iphone_icon'
                 description="Access to shifts and visits for all carers. Available on both Android and Apple."/>
@@ -73,7 +72,7 @@ export default function Features() {
                 description="Visually keep tabs on all your workers whilst on shift."/>
                 <FeatureContainer title='Digital Policies' icon='post_add_icon'
                 description="Keep all your company policies in one place with quick and easy access."/>
-           
+           </div>
             </div>
             
           </section>
