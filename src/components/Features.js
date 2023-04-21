@@ -60,7 +60,7 @@ export default function Features() {
 
             </div>
             
-            <div >
+            <div id='staff-features'>
             <h2 className='gotham-black'>Staff</h2>
             <p className='gotham-bold' style={{ fontSize: 20, color: '#919191'}}>Our home care app makes it easy to create and manage staff schedules, request and manage holidays and absence, communicate with staff, access important documents, and generate reports.</p>
             <div className='feature-list'>

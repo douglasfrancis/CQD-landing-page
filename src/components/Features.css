@@ -7,7 +7,7 @@
   width: 130px;
 }
 
-#client-features{
+#client-features, #staff-features{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -101,7 +101,7 @@
   #client-container, #staff-container{
     flex-direction: column;
   }
-  #client-features{
+  #client-features, #staff-features{
     width: 100%;
   }
   .feature-list{
