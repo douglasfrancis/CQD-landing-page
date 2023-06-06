@@ -40,7 +40,7 @@ nav a{
     background-color: #548b8a;
 }
 
-#log-in{
+#log-in, #side-log-in{
     color: #266867;
     font-weight: bold ;
     background-color: unset;
@@ -85,9 +85,10 @@ nav a{
 #sidebar-contents{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    height: 90%;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 3rem;
+    padding: 2rem;
 }
 
 
@@ -105,7 +106,7 @@ nav a{
   }
 
   @media only screen and (max-width: 830px) {
-    #log-in{
+    #log-in, #book-demo{
         display: none;
     }
     header{

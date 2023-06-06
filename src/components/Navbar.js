@@ -60,13 +60,26 @@ export default function Navbar() {
 
           <div className={sidebarOpen ? 'sidebar-open' : 'sidebar-closed'}>
             <img style={{width: 40}} onClick={()=>setSidebarOpen(!sidebarOpen)}  src={close} alt='close menu icon for CQD home care app'/>
+
+            
             <nav id='sidebar-contents'>
-              <Link onClick={()=>setSidebarOpen(!sidebarOpen)} to="/features">Features</Link>
+            <a href="https://app.cqd.org.uk">
+                <button id='side-log-in' style={{width:'50vw'}}>Log In</button>
+                </a>
+                <div style={{display:'flex', flexDirection:"column"}}>
+                <Link onClick={()=>setSidebarOpen(!sidebarOpen)} to="/features">Features</Link>
               <Link onClick={()=>setSidebarOpen(!sidebarOpen)} to="/pricing">Pricing</Link>
               <Link onClick={()=>setSidebarOpen(!sidebarOpen)} to="/support">Support</Link>
+                </div>
+            
 
+              <div>
               <input id='email-input' placeholder='Email Address*' name='email'/>
                 <button className='book-demo' onClick={sendEmail} disabled={sending}>Book Demo</button>
+               
+              </div>
+             
+               
             </nav>
           </div>
           

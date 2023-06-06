@@ -22,13 +22,13 @@ function Copyright(props) {
   const footers = [
     {
       title: 'Company',
-      description: [{name:'Team', link: '/team'}, {name:'History', link: '/team'}, {name:'Contact Us', link: '/support'}],
+      description: [{name:'Team', link: '/team'}, {name:'Blog', link: '/blog'}, {name:'Contact Us', link: '/support'}],
     },
     {
       title: 'Features',
       description: [
-        {name:'Client Management', link: '/'},
-        {name:'Staff Management', link: '/'},
+        {name:'Client Management', link: '/features'},
+        {name:'Staff Management', link: '/features'},
       ],
     },
   

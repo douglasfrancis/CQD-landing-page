@@ -19,6 +19,8 @@ import Accessibility from './components/Accessibility';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import Support from './components/Support';
+import Blog from './components/Blog';
+import BlogPost from './components/BlogPost';
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
         <Route path="/terms" element={<Terms />}/>
         <Route path="/team" element={<Team />}/>
         <Route path="/accessibility" element={<Accessibility />}/>
+        <Route path="/blog" element={<Blog />}/>
+        <Route path='/blog/:id' element={<BlogPost />}/>
       </Routes>
       <Footer />
   </BrowserRouter>
