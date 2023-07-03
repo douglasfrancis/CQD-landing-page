@@ -20,7 +20,8 @@
 }
 
 #home-info h1{
-    font-family: GothamBlack, sans-serif;
+    font-family: 'Albert Sans', sans-serif;
+    font-weight: 900;
     font-size: 3vw;
     color: #266867;
 }

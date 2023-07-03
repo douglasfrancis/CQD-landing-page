@@ -18,7 +18,8 @@ nav a{
     text-decoration: none;
     margin: 1.5rem;
     color: #266867;
-    font-family: GothamBold;
+    font-family: 'Albert Sans', sans-serif;
+    font-weight: 700;
     font-size: 1.1rem;
 }
 
@@ -31,7 +32,7 @@ nav a{
     color: white;
     font-weight: bold;
     transition: 0.5s;
-    font-family: GothamBold;
+    font-family: 'Albert Sans', sans-serif;
 
 }
 
@@ -51,7 +52,7 @@ nav a{
     transition: 0.5s;
     margin: 0 0.5rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    font-family: GothamBold;
+    font-family: 'Albert Sans', sans-serif;
 }
 
 #log-in:hover{

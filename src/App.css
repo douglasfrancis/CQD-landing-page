@@ -19,17 +19,17 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Gotham';
+    font-family: 'Albert Sans', sans-serif;
 }
 
 .gotham-black{
-  font-family: GothamBlack;
+  font-family: 'Albert Sans', sans-serif;
   color: #266867;
   margin: 1rem 0;
 }
 
 .gotham-bold{
   color: #313131;
-  font-family: GothamBold;
+  font-family: 'Albert Sans', sans-serif;
 }
 

@@ -42,7 +42,7 @@ export default function Pricing() {
       <div id='pricing-box' >
           
            <div id='pricing-header'>
-             <h2 style={{color:'#fff', fontFamily: 'GothamBold'}}>Pricing Calculator</h2>
+             <h2 style={{color:'#fff', fontFamily: 'Albert Sans'}}>Pricing Calculator</h2>
            </div>
           
           <div id='pricing-info'>

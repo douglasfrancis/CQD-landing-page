@@ -5,6 +5,8 @@ import Container from '@mui/material/Container'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import Clients from '../Assets/clients.png'
 import screenshot from '../Assets/screenshot.png'
+import arms from '../Assets/BICEPS.png'
+import legs from '../Assets/SHINS.png'
 
 export default function Features() {
 
@@ -28,6 +30,10 @@ export default function Features() {
               <h2 className='gotham-black' style={{fontSize:30}}>Clients</h2>
               <p className='gotham-bold' style={{ fontSize: 20, color: '#919191'}}>Client management is a critical function for any home care provider.<br/><br/> Our client management system helps home care providers improve efficiency, reduce costs, and improve the quality of care they provide.</p>
 
+              <div>
+                <img className='body-map' src={arms}/>
+                <img className='body-map' src={legs}/>
+              </div>
               <div className='feature-list'>
                 <FeatureContainer title='Medication and eMar' icon='medication_icon'
                   description="Add all your clients medical requirements and visually manage their administering of medication using the eMAR."/>
