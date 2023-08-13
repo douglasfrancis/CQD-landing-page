@@ -51,7 +51,7 @@ export default function Features() {
 
             <div style={{display:'flex', alignItems:'center', justifyContent:'center', flexDirection:'column'}}>
                 <img className='screenshot'  src={Clients} alt="Domiciliary Home care app - Care Quality Digital client screen "/>
-                <i style={{color:'#266', marginTop: 20}}>Client list overview - Snapshot of clients name, image, DOB and address</i>
+                <p style={{color:'#266', marginTop: 20}}>Client list overview - Snapshot of clients name, image, DOB and address</p>
 
             </div>
             
@@ -62,7 +62,7 @@ export default function Features() {
             <div style={{display:'flex', alignItems:'center', justifyContent:'center', flexDirection:'column', marginRight: 20}}>
 
               <img className='screenshot' src={screenshot} alt=""/>
-              <i style={{color:'#266', marginTop: 20}}>Staff rota view - Quickly create custom rotas for all your staff</i>
+              <p style={{color:'#266', marginTop: 20}}>Staff rota view - Quickly create custom rotas for all your staff</p>
 
             </div>
             
