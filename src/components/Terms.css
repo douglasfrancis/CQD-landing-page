@@ -8,6 +8,7 @@
 
 #terms-container > h1, #terms-container > h2,#terms-container > h3, #terms-container > h4{
     color: #266867;
+    line-height: 35px;
 }
 
 #terms-container > *{
